@@ -1,0 +1,84 @@
+/* Empty. Add your own CSS if you like */
+.list-item.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+
+.list-item.ng-enter-stagger {
+  -webkit-animation-delay:200ms;
+  animation-delay:200ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+
+.title-image {
+    margin-top: 1px;
+    height: 40px;
+}
+
+.item-channel {
+	color: #E91A1A;
+	margin-left: 5px;
+}
+
+.item-title {
+	color: #3E3939;
+	margin-top: 5px;
+	border-bottom: 0px solid #519FF2;
+}
+
+.item-publish {
+	color: #8B8484;
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+.item-content {
+	color: #332F2F;
+	width: 100%;
+}
+
+
+/* custome side menu */
+body {
+  cursor: url("http://ionicframework.com/img/finger.png"), auto;
+}
+
+.dark {
+  background-color: blue !important;
+  color: #ffffff;
+}
+.dark .item {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid;
+  border-bottom: 2px solid;
+  border-color: #0000cc;
+  padding: 20px;
+  color: #F0F1F1;
+  max-height: none;
+}
+.dark .item:last-child {
+  border-bottom: 1px solid #333333;
+}
+.dark .item.current {
+  background-color: #262727 !important;
+  border-top: 1px solid #464646 !important;
+  border-bottom: 2px solid #333333 !important;
+}
+.dark .item.current p, .dark .item.current h3 {
+  opacity: .7;
+}
+.dark h2,
+.dark h3,
+.dark p,
+.dark a {
+  color: #F0F1F1;
+}
+
+.dark-head {
+  text-decoration: none;
+}
+/* end customer side menu */

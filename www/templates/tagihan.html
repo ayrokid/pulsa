@@ -1,0 +1,34 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+        <h4 class="text-center">Bayar Tagihan</h4>
+         <div class="list">
+            <a class="item item-icon-left" href="#/app/tagihan_telepon">
+                <i class="icon ion-android-call"></i>
+                Telepon
+            </a>
+            <a class="item item-icon-left" href="#/app/tagihan_internet">
+                <i class="icon ion-earth"></i>
+                Internet
+            </a>
+            <a class="item item-icon-left" href="#/app/tagihan_listrik">
+                <i class="icon ion-flash"></i>
+                Listrik
+            </a>
+            <a class="item item-icon-left" href="#/app/tagihan_tv">
+                <i class="icon ion-monitor"></i>
+                TV Berbayar
+            </a>
+            <a class="item item-icon-left" href="#/app/tagihan_pdam">
+                <i class="icon ion-waterdrop"></i>
+                PDAM
+            </a>
+            <a class="item item-icon-left" href="#/app/tagihan_kredit">
+                <i class="icon ion-card"></i>
+                kredit
+            </a>
+         </div>
+    </ion-content>
+</ion-view>

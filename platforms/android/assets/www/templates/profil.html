@@ -1,0 +1,35 @@
+<ion-view>
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+    <div class="padding">
+        <h4 class="text-center">PROFIL SAYA</h4>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Akun ID</span>
+                <input type="text" readonly value="{{item.idTmoney}}" />
+            </label>
+            <label for="email" class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" readonly value="{{item.userName}}" />
+            </label>
+            <label for="nama" class="item item-input item-stacked-label">
+                <span class="input-label">Nama Lengkap</span>
+                <input type="text" readonly value="{{item.fullName}}" >
+            </label>
+            <label for="hp" class="item item-input item-stacked-label">
+                <span class="input-label">No. HP</span>
+                <input type="text" readonly value="{{item.phoneNo}}" >
+            </label>
+            <label for="akun" class="item item-input item-stacked-label">
+                <span class="input-label">Tipe Akun</span>
+                <input type="text" readonly value="{{item.userType}}" >
+            </label>
+        </div>
+        <div style="text-align: center;">
+        <a href="#/app/edit_profil" class="button button-assertive icon ion-edit"> Edit Profil</a>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

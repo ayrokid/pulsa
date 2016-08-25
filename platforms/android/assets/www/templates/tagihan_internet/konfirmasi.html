@@ -1,0 +1,47 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive" align-title="center">
+    <h1 class="title">Konfirmasi</h1>
+    <div class="buttons">
+      <button class="button button-clear icon ion-close" ng-click="confirm_close()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doPay()">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Transaksi</span>
+            <input type="text" value="Bayar Tagihan Internet" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">No. Pelanggan</span>
+            <input type="text" ng-model="item.billNumber" placeholder="No. Pelanggan kosong" readonly />
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Produk</span>
+            <input type="text" ng-repeat="row in operator" ng-if="row.id == item.productCode" value="{{row.name}}" readonly />
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Jumlah Tagihan</span>
+            <input type="text" value="{{item.amount | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Admin Fee</span>
+            <input type="text" value="{{item.fee | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Total</span>
+            <input type="text" value="{{item.total | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">PIN</span>
+            <input type="text" ng-model="item.pin" placeholder="Masukkan PIN Anda" >
+        </label>
+        <div class="button-bar padding">
+            <button class="button button-dark" type="button" ng-click="confirm_close()" > Batal</button>
+            <a class="button"> </a>
+            <button class="button button-balanced" type="submit"> OK</button>
+        </div>
+      </div>
+    </form>
+    </ion-content>
+</ion-modal-view>

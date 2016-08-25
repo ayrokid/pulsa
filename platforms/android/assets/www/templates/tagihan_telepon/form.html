@@ -1,0 +1,29 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+        <h4 class="text-center">Bayar Tagihan Telepon</h4>
+        <form ng-submit="save()" class="">
+         <div class="list">
+            <label class="item item-select">
+                <span class="input-label">Operator</span>
+                <select name="operator" id="operator" ng-model="item.operator" ng-change="getOperator()">
+                    <option value="0">Pilih</option>
+                    <option value="Telkom"> Telkom</option>
+                    <option value="Hallo">Telkomsel Hallo</option>
+                </select>
+            </label>
+            <label for="telepon" class="item item-input item-stacked-label">
+                <span class="input-label">No. Telepon</span>
+                <input type="text" ng-model="item.telepon" placeholder="Masukkan Nomor Telepon" />
+            </label>
+            <label for="harga" class="item item-input item-stacked-label">
+                <span class="input-label">Admin Fee </span>
+                <input type="text" value="{{item.fee | currency: 'Rp. '}}" placeholder="0.00" />
+            </label>
+         </div>
+         <button class="button button-block button-assertive icon ion-bag" type="submit" > Bayar</button>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+        <h4 class="text-center">History Transaksi</h4>
+        <div class="list">
+            <a ng-repeat="row in items" class="item" href="javascript:void(0)"  >
+                <h2>{{ row.trans_code }}</h2>
+                <p>{{ row.timestamp }}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

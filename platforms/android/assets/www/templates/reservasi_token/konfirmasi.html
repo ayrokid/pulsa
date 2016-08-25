@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive" align-title="center">
+    <h1 class="title">Status Transaksi</h1>
+    <div class="buttons">
+      <button class="button button-clear icon ion-close" ng-click="close()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Transaksi</span>
+          <input type="text" value="Reservasi Token" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Token Anda</span>
+          <input type="text" ng-model="item.token" >
+        </label>
+        <label class="row responsive-sm item-text-wrap" style="text-align: center;">
+            <h3>Transaksi Berhasil</h3><br>
+            <p>
+                Gunakan kode token di merchant yang kamu inginkan
+            </p><br>
+            <button class="button button-balanced icon ion-checkmark" type="button" ng-click="close()" > OK</button>
+        </label>
+      </div>
+    </form>
+    </ion-content>
+</ion-modal-view>

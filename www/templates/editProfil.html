@@ -1,0 +1,55 @@
+<ion-view hide-nav-bar="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+    <div class="padding">
+        <h4 class="text-center">PROFIL SAYA</h4>
+        <form ng-submit="save()" class="">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Akun ID</span>
+                <input type="text" readonly ng-model="item.idTmoney" placeholder="Akun ID" />
+            </label>
+            <label for="email" class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" readonly ng-model="item.userName" placeholder="Alamat Email" />
+            </label>
+            <label for="nama" class="item item-input item-stacked-label">
+                <span class="input-label">Nama Lengkap</span>
+                <input type="text" ng-model="item.fullName" placeholder="Nama Lengkap" >
+            </label>
+            <label for="tempat" class="item item-input item-stacked-label">
+                <span class="input-label">Tempat Lahir</span>
+                <input type="text" ng-model="item.tempatLahir" placeholder="Tempat Lahir" >
+            </label>
+            <label for="tanggal" class="item item-input item-stacked-label">
+                <span class="input-label">Tanggal Lahir</span>
+                <input type="text" ng-model="item.tanggalLahir" placeholder="DD-MM-YYYY" >
+            </label>
+            <label for="alamat" class="item item-input item-stacked-label">
+                <span class="input-label">Alamat</span>
+                <textarea name="alamat" id="alamat" cols="30" rows="4" ng-model="item.address" ></textarea>
+            </label>
+            <label for="kota" class="item item-input item-stacked-label">
+                <span class="input-label">Kota</span>
+                <input type="text" ng-model="item.cityName" placeholder="Nama Kota/Kabupaten" >
+            </label>
+            <label for="propinsi" class="item item-input item-stacked-label">
+                <span class="input-label">Propinsi</span>
+                <input type="text" ng-model="item.province" placeholder="Nama Propinsi" >
+            </label>
+            <label for="hp" class="item item-input item-stacked-label">
+                <span class="input-label">No. HP</span>
+                <input type="text" readonly ng-model="item.phoneNo" placeholder="+62XXXXXXXXX" >
+            </label>
+            <label for="hp" class="item item-input item-stacked-label">
+                <span class="input-label">Tipe Akun</span>
+                <input type="text" readonly ng-model="item.userType" >
+            </label>
+        </div>
+        <button class="button button-block button-assertive icon ion-checkmark" type="submit" > Simpan</button>
+        </form>
+    </div>
+  </ion-content>
+</ion-view>

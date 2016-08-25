@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive" align-title="center">
+    <h1 class="title">Konfirmasi</h1>
+    <div class="buttons">
+      <button class="button button-clear icon ion-close" ng-click="close()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doPay()">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Transaksi</span>
+          <input type="text" value="Tarik Tunai" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nominal</span>
+          <input type="text" value="{{item.nominal | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Admin Fee</span>
+          <input type="text" value="{{item.fee | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Jumlah</span>
+          <input type="text" value="{{item.total | currency: 'Rp. '}}" readonly >
+        </label>
+        <label class="item" style="text-align: center;">
+            <button class="button button-dark icon ion-close" type="button" ng-click="close()" > Batal</button>
+            <button class="button button-balanced icon ion-checkmark" type="submit"> OK</button>
+        </label>
+      </div>
+    </form>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+        <h4 class="text-center">Transfer</h4>
+         <div class="list">
+            <a class="item item-icon-left" href="#/app/transfer_tmoney">
+                <i class="icon ion-iphone"></i>
+                Tmoney
+            </a>
+            <a class="item item-icon-left" href="#/app/transfer_bank">
+                <i class="icon ion-cash"></i>
+                Bank
+            </a>
+         </div>
+    </ion-content>
+</ion-view>

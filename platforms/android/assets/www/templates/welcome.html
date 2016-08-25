@@ -1,0 +1,33 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+
+    <ion-content>
+        <div class="">
+            <div class="content">
+                <div class="app-icon"></div>
+            </div>
+        </div>
+
+        <form ng-submit="doLogin()" class="padding">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Alamat Email</span>
+                    <input type="email" ng-model="login.userName" placeholder="user@domain.com" maxlength="100" >
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="login.password" placeholder="Password" >
+                </label>
+            </div>
+            <button class="button button-block button-assertive icon ion-log-in" type="submit"> Log in</button>
+        </form>
+        <div style="text-align: center;">
+            <a href="#/app/forgot" class="button button-clear button-positive" ng-click="forgot()" >Lupa Password?</a>
+        </div>
+        <div style="text-align: center;">
+            <a href="#/app/register" class="button button-clear button-positive">Daftar</a> | <a href="#/app/about" class="button button-clear button-positive">About</a>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-default">
+        <div class="title">Powered By silvanix.com</div>
+    </div>
+</ion-view>

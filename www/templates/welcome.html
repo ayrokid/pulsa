@@ -1,0 +1,61 @@
+<style>
+    .wp {
+        background-color: #B70B0B;
+        color: #ffffff;
+    }
+
+    textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+        display: block;
+        padding-top: 2px;
+        padding-left: 4px;
+        height: 34px;
+        color: #111;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .wp .item.item-stacked-label {
+        border: none;
+    }
+
+    .wp .item-input {
+        padding-left: 4px;
+    }
+
+    .wp .input-label, .wp .button.button-positive.button-clear {
+        color: #ffffff;
+    }
+</style>
+<ion-view cache-view="false" hide-nav-bar="true" class="wp" drag-content="false">
+
+    <ion-content>
+        <div class="">
+            <div class="content">
+                <div class="app-icon"></div>
+            </div>
+        </div>
+
+        <form ng-submit="doLogin()" class="padding">
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Alamat Email</span>
+                    <input type="email" ng-model="login.userName" placeholder="user@domain.com" maxlength="100" >
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="login.password" placeholder="Password" >
+                </label>
+            </div>
+            <button class="button button-block button-dark icon ion-log-in" type="submit"> Log in</button>
+        </form>
+        <div style="text-align: center;">
+            <a href="#/app/forgot" class="button button-clear button-positive" ng-click="forgot()" >Lupa Password?</a>
+        </div>
+        <div style="text-align: center;">
+            <a href="#/app/register" class="button button-clear button-positive">Daftar</a> | <a href="#/app/about" class="button button-clear button-positive">About</a>
+        </div>
+        <div class="app-powered"></div>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,389 @@
+/* Empty. Add your own CSS if you like */
+
+h4 {
+    text-transform: uppercase;
+}
+/* Utilities */
+.hero h1 strong {color: #E62222}
+.app-icon {
+    background-color: #fff;
+    background: url('../img/logo.png') center no-repeat;
+    height: 125px;
+    margin: 0 auto;
+    border: 1px solid #fffff;
+}
+.app-powered {
+    background-color: #fff;
+    background: url('../img/telkom.png') center no-repeat;
+    height: 125px;
+    margin: 0 auto;
+    border: 1px solid #fffff;
+}
+/* Header */
+.bar.bar-positive {
+    height: 75px;
+    background-color: #B70B0B;
+    background-image: linear-gradient(0deg, #e42112, #e42112 50%, transparent 50%);
+    color: #ffffff;
+    border-bottom: 4px solid #000000;
+}
+.page-title, .page-sub-title {
+    color: #ffffff !important;
+}
+.bar .button.button-fab {
+    margin-top: 10px;
+    margin-right: 45px;
+    border: 1px solid #ffffff;
+    min-width: 25px;
+    min-height: 25px;
+    width: 35px;
+    height: 35px;
+}
+.bar .title {
+    height: 58px;
+}
+.title-image {
+    float: left;
+}
+.page-title {
+    height: 14px;
+    line-height: 45px;
+    color: #3F3333;
+}
+.page-sub-title {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #3F3333;
+    line-height: 60px;
+}
+
+/* side menu */
+.side-item {
+    color: #ffffff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d3d3d+0,595959+46,595959+62,3d3d3d+100 */
+background: rgb(61,61,61); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(61,61,61,1) 0%, rgba(89,89,89,1) 46%, rgba(89,89,89,1) 62%, rgba(61,61,61,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(61,61,61,1) 0%,rgba(89,89,89,1) 46%,rgba(89,89,89,1) 62%,rgba(61,61,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(61,61,61,1) 0%,rgba(89,89,89,1) 46%,rgba(89,89,89,1) 62%,rgba(61,61,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#3d3d3d',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* end sidemenu */
+
+.error {
+    color: #EC2121;
+}
+.dashboard-menu {
+    margin-top: 35px;
+}
+.list a.item {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.list a:hover {
+    background-color: #17BDDC;
+}
+
+.list-item.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+
+.list-item.ng-enter-stagger {
+  -webkit-animation-delay:200ms;
+  animation-delay:200ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+
+.link {
+    color: #116262;
+    font-weight: bold;
+}
+
+h4 {
+    color: #116262;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+h4:first-child {
+    border-top: none;
+    padding-top: initial;
+}
+
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.no-border {
+    border: none;
+}
+
+.static {
+    position: static;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.border-top {
+    border-top: solid 1px #ccc;
+    padding-top: 30px;
+}
+
+.blue-grey-900 {
+    background-color: #263238 !important;
+    color: #fff;
+}
+/* Menu */
+
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.item-radio input:checked ~ .item-content {
+    background: transparent;
+}
+
+.ion-close2 {
+    color : #000000 !important;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+.item.item-radio .radio-icon {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.item.item-radio:active .radio-icon {
+    opacity: 0;
+    transform: scale(1.6);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.directions.button-bar {
+    margin: 0 auto;
+    width: 33.333%;
+}
+
+.directions.button-bar button {
+    line-height: 26px;
+}
+
+.ion-arrow-right-c.top-left:before {
+    transform: rotate(-135deg);
+}
+
+.ion-arrow-right-c.top-right:before {
+    transform: rotate(-45deg);
+}
+
+.ion-arrow-right-c.bottom-left:before {
+    transform: rotate(-225deg);
+}
+
+.ion-arrow-right-c.bottom-right:before {
+    transform: rotate(45deg);
+}
+
+#modal {
+    background-color: #ef4e3a;
+    border-radius: 100%;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 50%;
+    bottom: 0;
+    opacity: 0;
+    width: 700px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.expand #modal {
+    background-color: #DBDBDB;
+    border-radius: 0;
+    border-top: solid 4px #ef4e3a;
+    opacity: 1;
+    z-index: 9;
+}
+/* CODE */
+
+.code {
+    color: #333;
+    font-family: monospace;
+    padding: 10px;
+    white-space: pre;
+}
+
+.code-wrapper {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.code-wrapper::before {
+    color: #1B5E20;
+    font-family: "Ionicons";
+    speak: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: '\f216 ';
+}
+
+.code-wrapper.active::before {
+    content: '\f207 ';
+}
+
+.code-wrapper .toggle {
+    color: #4CAF50;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 8px;
+    text-decoration: underline;
+}
+
+.code-wrapper .code {
+    opacity: 0;
+    margin-top: -20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.1s all ease-in-out;
+    z-index: 9999999999;
+}
+
+.code-wrapper.code-wrapper-last .code {
+    position: relative;
+}
+
+.code-wrapper.active .code {
+    background: #f9f9f9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    left: 16px;
+    height: initial;
+    margin-top: 15px;
+    padding: 15px;
+    right: 16px;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    width: initial;
+}
+
+.popover {
+    left: initial !important;
+    right: 16px !important;
+    top: 16px !important;
+}
+.platform-android .popover{
+margin-top:10px;
+}
+
+.title-image {
+    margin-top: 1px;
+    height: 40px;
+}
+
+.item-channel {
+  color: #E91A1A;
+  margin-left: 5px;
+}
+
+.item-title {
+  color: #3E3939;
+  margin-top: 5px;
+  border-bottom: 0px solid #519FF2;
+}
+
+.item-publish {
+  color: #8B8484;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.item-content {
+  color: #332F2F;
+  width: 100%;
+}
+
+/* view table */
+.header .col {
+    background-color:lightgrey;
+    font-weight: bold;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+.row:nth-child(2n) .col {background-color: #e4e4ea;}
+
+/* customer content */
+.text-center {
+    text-align: center;
+    font-weight: bold;
+    color: #E42222;
+}
+
+.item.item-stacked-label {
+    border-bottom: 1px solid #cccccc;
+}
+
+/* cara upgrade */
+.list-number {
+    margin-left: 20px;
+    list-style-type: decimal
+}
+
+.list-number li {
+    margin-bottom: 7px;
+}
+
+
+.popup-head {
+    border-bottom: 2px solid #888282;
+}

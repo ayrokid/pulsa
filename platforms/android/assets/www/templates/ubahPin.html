@@ -1,0 +1,33 @@
+<ion-view hide-nav-bar="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+    <div class="padding">
+        <h4>Ubah PIN</h4>
+        <form ng-submit="doChange()" class="">
+        <div class="list">
+            <label for="plama" class="item item-input item-stacked-label">
+                <span class="input-label">PIN Lama</span>
+                <input type="text" ng-model="old_pin" placeholder="Masukkan PIN Lama" >
+            </label>
+            <label for="pbaru" class="item item-input item-stacked-label">
+                <span class="input-label">PIN Baru</span>
+                <input type="text" id="pbaru" ng-model="new_pin" placeholder="Masukkan PIN Baru" >
+            </label>
+            <label for="rbaru" class="item item-input item-stacked-label">
+                <span class="input-label">Ulangi PIN Baru</span>
+                <input type="text" id="rbaru" ng-model="retry_pin" placeholder="Masukkan Ulang PIN Baru" >
+                <div ng-show="retry_pin.length > 0 && retry_pin != new_pin">
+                    <span class="error">PIN tidak cocok!</span>
+                </div>
+            </label>
+        </div>
+        <p>
+        <strong>Lupa PIN?</strong>
+        </p>
+        <button class="button button-block button-assertive icon ion-checkmark" type="submit" > Ubah PIN</button>
+        </form>
+    </div>
+  </ion-content>
+</ion-view>

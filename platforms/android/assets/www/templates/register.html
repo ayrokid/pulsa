@@ -1,0 +1,54 @@
+<ion-view cache-view="false" hide-nav-bar="">
+
+    <ion-content>
+        <div class="">
+            <div class="content">
+                <div class="app-icon"></div>
+            </div>
+        </div>
+
+        <form ng-submit="doReg()" class="padding">
+            <div class="list">
+                <h4>DATA PERSONAL</h4>
+                <p>Registrasikan dirimu menjadi pelanggan t-money</p>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Alamat Email</span>
+                    <input type="email" ng-model="reg.userName" placeholder="user@domain.com" maxlength="100" >
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Nama Lengkap</span>
+                    <input type="text" ng-model="reg.fullName" placeholder="Nama Lengkap" >
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Nomor HP</span>
+                    <input type="text" ng-model="reg.phoneNo" placeholder="Nomor HP" max="15" >
+                </label>
+                <h4>PASSWORD</h4>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="reg.password" placeholder="Password" >
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Konfirmasi Password</span>
+                    <input type="password" placeholder="Konfirmasi Password" >
+                </label>
+                <input type="hidden" ng-model="reg.terminal" >
+            </div>
+            <button class="button button-block button-positive icon ion-log-in" type="submit"> Daftar</button>
+        </form>
+    </ion-content>
+</ion-view>
+
+<style type="text/css">
+.bar.bar-assertive {
+    height: 45px;
+    background-color: #CCCCCC;
+    background-image: linear-gradient(0deg, #e42112, #e42112 50%, transparent 50%);
+}
+.bar .button.button-fab {
+    display: none;
+}
+.bar .title {
+    display: none;
+}
+</style>

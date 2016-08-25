@@ -1,0 +1,28 @@
+<ion-view view-title="">
+    <div class="bar bar-subheader bar-default">
+        <h2 class="title">{{balance() | currency: 'Rp. '}}</h2>
+    </div>
+    <ion-content class="padding dashboard-menu">
+        <h4 class="text-center">Beli Pulsa Listrik</h4>
+        <form ng-submit="save()" class="">
+         <div class="list">
+            <label for="nomor" class="item item-input item-stacked-label">
+                <span class="input-label">No. Meter Listrik</span>
+                <input type="text" ng-model="item.nomor" placeholder="Masukkan Nomor Meter Listrik" />
+            </label><br>
+            <label for="pulsa" class="item item-select">
+                <span class="input-label">Jumlah Pulsa</span>
+                <select ng-model="item.amount" ng-change="getHarga()">
+                    <option selected value="">Pilih</option>
+                    <option ng-repeat="row in nominals" value="{{ row * 1000 }}"> {{ row * 1000 }}</option>
+                </select>
+            </label>
+            <label for="harga" class="item item-input item-stacked-label">
+                <span class="input-label">Harga</span>
+                <input type="text" value="{{item.fee | currency: 'Rp. '}}" placeholder="0.00" />
+            </label>
+         </div>
+         <button class="button button-block button-assertive icon ion-bag" type="submit" > Beli</button>
+        </form>
+    </ion-content>
+</ion-view>
